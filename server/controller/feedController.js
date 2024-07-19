@@ -1,7 +1,13 @@
-const feedItem = require('../model/feedItem');
+const FeedItem = require('../model/feedItem');
 
 let feedItems = [];
-let one = feedItem.createfeedItem(1, "Title", "body", "linkUrl", "imageUrl");
+let one = FeedItem.createfeedItem(1, "Title", "body", "linkUrl", "imageUrl");
 feedItems.push(one);
 console.log(feedItems);
 letcurrentId = 1;
+
+exports.getAllFeedItems = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(feedItems);
+
+};

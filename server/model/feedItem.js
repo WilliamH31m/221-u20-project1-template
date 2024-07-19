@@ -1,4 +1,4 @@
-class feedItem {
+class FeedItem {
     constructer(id, title, body, linkUrl, imageUrl) {
         this.id = id;
         this.title = title;
@@ -8,6 +8,6 @@ class feedItem {
     }
 }
 
-exports.createfeedItem = function(id, title, body, linkUrl, imageUrl) {
-    return new feedItem(id, title, body, linkUrl, imageUrl);
+exports.createFeedItem = function(id, title, body, linkUrl, imageUrl) {
+    return new FeedItem(id, title, body, linkUrl, imageUrl);
 };
