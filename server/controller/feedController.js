@@ -1,10 +1,11 @@
 const FeedItem = require('../model/feedItem');
 
+
 let feedItems = [];
-//function feedItems.createFeedItem(1, "Title", "body", "linkUrl", "imageUrl");
-let one = feedItems.createfeedItem(1, "Title", "body", "linkUrl", "imageUrl");
-feedItems.push(one);
-console.log(feedItems);
+let one = FeedItem.createFeedItem(1, "Title", "body", "linkUrl", "imageUrl");
+let two = FeedItem.createFeedItem(1, "Title", "body", "linkUrl", "imageUrl");
+feedItems.push(one, two);
+//console.log(feedItems);
 letcurrentId = 1;
 
 exports.getAllFeedItems = (req, res) => {
